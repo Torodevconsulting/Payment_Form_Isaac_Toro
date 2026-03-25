@@ -33,7 +33,7 @@
                     break; 
                 }
             }
-
+            // For payment method dropdown, check if one option is selected
             const paymentMethods = document.getElementsByName('paymentMethod');
             let paymentSelected = false;
             for (let i = 0; i < paymentMethods.length; i++) {
@@ -53,13 +53,13 @@
             }
         }
 
-        // Add event listeners to all required text fields to check the form whenever the user types or changes something
+        // We added event listeners to all required text fields to check the form whenever the user types or changes something
         for (let i = 0; i < requiredFields.length; i++) {
             requiredFields[i].addEventListener('input', checkFormFields);
-            requiredFields[i].addEventListener('change', checkFormFields); // important for the select dropdown
+            requiredFields[i].addEventListener('change', checkFormFields);
         }
 
-        // Add event listeners to the radio buttons
+        // We added event listeners to the radio buttons
         const paymentMethods = document.getElementsByName('paymentMethod');
         for (let i = 0; i < paymentMethods.length; i++) {
             paymentMethods[i].addEventListener('change', checkFormFields);
