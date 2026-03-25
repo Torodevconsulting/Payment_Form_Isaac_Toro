@@ -1,0 +1,26 @@
+
+        .payment-methods {
+            background-color: #6c757d;
+            border-radius: 4px;
+            padding: 8px 12px;
+            display: inline-flex;
+            gap: 15px;
+            color: white;
+            align-items: center;
+        }
+        .payment-methods .form-check {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            min-height: auto;
+            padding-left: 0;
+        }
+        .payment-methods .form-check-input {
+            margin: 0;
+            margin-top: 1px;
+            float: none;
+        }
+        .payment-methods .form-check-label {
+            line-height: 1;
+        }
